@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-assets>
+            <img id="tierra" src="tierra.jpg">
+        </a-assets>
+        <a-sky color="#000"></a-sky>
+        <a-sphere position="0 2 -5" radius="1" src="#tierra"
+           animation="property: rotation; dur: 10000;
+           to: 0 360 0; loop: true"></a-sphere>  
+    </a-scene>
+  </body>
+</html>
+

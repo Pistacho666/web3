@@ -1,0 +1,11 @@
+Model Information:
+* title:	Augmented reality glasses
+* source:	https://sketchfab.com/3d-models/augmented-reality-glasses-ac1e58afd7254f128a09592f940f44e5
+* author:	zombitt (https://sketchfab.com/zombitt)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Augmented reality glasses" (https://sketchfab.com/3d-models/augmented-reality-glasses-ac1e58afd7254f128a09592f940f44e5) by zombitt (https://sketchfab.com/zombitt) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

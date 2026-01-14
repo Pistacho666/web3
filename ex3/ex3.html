@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-face-aframe.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@master/dist/aframe-master.min.js"></script>
+  </head>
+  <body>
+    <a-scene
+      mindar-face
+      embedded
+      color-space="sRGB"
+      renderer="colorManagement: true, physicallyCorrectLights"
+      vr-mode-ui="enabled: false"
+      device-orientation-permission-ui="enabled: false"
+    >
+      <a-assets>
+        <!-- Sombrero -->
+        <a-asset-item id="hatModel" src="luffy_hat/scene.gltf"></a-asset-item>
+        <!-- Lentes (gafas) -->
+        <a-asset-item id="glassesModel" src="augmented_reality_glasses/scene.gltf"></a-asset-item>
+      </a-assets>
+
+      <a-camera active="false" position="0 0 0"></a-camera>
+
+      <!-- Sombrero en la cabeza -->
+      <a-entity mindar-face-target="anchorIndex: 10">
+        <a-gltf-model
+          rotation="0 180 0"
+          position="0 0.1 -0.3"
+          scale="1.0 1.0 1.0"
+          src="#hatModel"
+        ></a-gltf-model>
+      </a-entity>
+
+      <!-- Gafas en la cara completa (anchor 0 es ideal para gafas) -->
+    <a-entity mindar-face-target="anchorIndex: 195">
+    <a-gltf-model
+      src="#glassesModel"
+      position="0 0.06 -0.12"
+      rotation="0 180 0"
+      scale="0.3 0.3 0.3"
+     ></a-gltf-model>
+  </a-entity>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>

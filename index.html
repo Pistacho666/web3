@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO bàsic -->
+    <meta name="description" content="Portafolis web amb projectes 3D en JavaScript utilitzant A-Frame i MindAR. Experiències de realitat virtual i augmentada.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="imatges/favicon.png">
+
+    <title>Portafolis Web 3D</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* HEADER */
+        header {
+            background: #000;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+            border-bottom: 1px solid #333;
+        }
+
+        header nav {
+            text-align: center;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+        .hero-image {
+            width: 100%;
+            height: 80vh;
+            background-image: url("imatges/cabecera.png");
+            background-size: cover;
+            background-position: center;
+            margin-top: 60px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-image::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.45);
+        }
+
+        .hero-image h1 {
+            position: relative;
+            font-size: 48px;
+            z-index: 1;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        /* INTRODUCCIÓ */
+        .info {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            text-align: left;
+        }
+
+        .info h2 {
+            text-align: center;
+        }
+
+        .info a {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            color: #4da3ff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* EXERCICIS */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .box {
+            background: #111;
+            border: 1px solid #333;
+            box-shadow: 0 0 10px rgba(255,255,255,0.05);
+            margin: 15px;
+            width: 350px;
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 20px rgba(255,255,255,0.15);
+        }
+
+        .box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .box h3 {
+            margin-top: 15px;
+        }
+
+        /* SOBRE MI */
+        .about {
+            background: #111;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid #333;
+            object-fit: cover;
+        }
+
+        .about button {
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: #000;
+            color: #fff;
+            border: 1px solid #fff;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #000;
+            color: #aaa;
+            text-align: center;
+            padding: 15px;
+            border-top: 1px solid #333;
+        }
+
+        @media (max-width: 768px) {
+            .hero-image {
+                height: 60vh;
+            }
+
+            .hero-image h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- CAPÇALERA -->
+<header>
+    <nav>
+        <a href="#introduccio">Introducció</a>
+        <a href="#exercicis">Exercicis</a>
+        <a href="#sobre-mi">Sobre mi</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <div class="hero-image">
+        <h1></h1>
+    </div>
+
+    <!-- INTRODUCCIÓ -->
+    <section class="info" id="introduccio">
+        <h2>Llibreries 3D</h2>
+        <p>
+            Aquest portafolis presenta una selecció de projectes desenvolupats amb llibreries 3D en JavaScript, principalment A-Frame i MindAR, orientats a la creació d’experiències de realitat virtual, visualització de models tridimensionals i realitat augmentada.
+        </p>
+        <a href="https://github.com/Pistacho666/web3d" target="_blank">
+            Visita el GitHub del projecte
+        </a>
+    </section>
+
+    <!-- EXERCICIS -->
+    <section id="exercicis">
+        <p style="text-align:center; opacity:0.8;">
+            Fes clic sobre cada projecte per accedir a l’experiència interactiva
+        </p>
+
+        <div class="flex-container">
+
+            <a class="box" href="ex1/ex1.html">
+                <img src="imatges/exercici1.png" alt="Introducció a A-Frame" loading="lazy">
+                <h3>EX1 – Introducció A-Frame</h3>
+                <p>Primera aproximació a les llibreries 3D.</p>
+                <p><strong>Tecnologia:</strong> A-Frame</p>
+            </a>
+
+            <a class="box" href="ex2/ex2.html">
+                <img src="imatges/exercici2.png" alt="Model 3D GLB" loading="lazy">
+                <h3>EX2 – Model 3D</h3>
+                <p>Visualització d’un model GLB.</p>
+                <p><strong>Tecnologia:</strong> A-Frame</p>
+            </a>
+
+            <a class="box" href="ex3/ex3.html">
+                <img src="imatges/exercici3.png" alt="Realitat augmentada amb MindAR" loading="lazy">
+                <h3>EX3 – Realitat Augmentada</h3>
+                <p>Experiència AR utilitzant MindAR.</p>
+                <p><strong>Tecnologia:</strong> MindAR</p>
+            </a>
+
+            <a class="box" href="ex4/ex4.html">
+                <img src="imatges/exercici4.png" alt="Saturn abstracte amb A-Frame" loading="lazy">
+                <h3>EX4 – Saturn Abstracte</h3>
+                <p>Forma artística inspirada en Saturn creada amb A-Frame.</p>
+                <p><strong>Tecnologia:</strong> A-Frame</p>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section class="about" id="sobre-mi">
+        <h2>Andrés Daniel Torres Pérez</h2>
+        <img src="imatges/sobremi.png" alt="Foto personal" loading="lazy">
+        <p>
+            Estudiant de SMIX apassionat per la tecnologia, els sistemes informàtics i la realitat virtual.
+        </p>
+        <button onclick="window.location.href='curriculum.pdf'">
+            Descarrega el meu CV
+        </button>
+    </section>
+
+</main>
+
+<!-- PEU DE PÀGINA -->
+<footer>
+    <p>&copy; 2025 – Andrés Daniel Torres Pérez</p>
+    <p>SMIX · Web 3D · A-Frame & MindAR</p>
+    <p>Versió 1.0</p>
+</footer>
+
+</body>
+</html>
