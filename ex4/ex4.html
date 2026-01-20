@@ -166,6 +166,13 @@
         });
       }
     });
+        AFRAME.registerComponent("mylink", {
+        init: function() {  
+         this.el.addEventListener("click", (e) => {              
+            window.location = this.data.href;      
+           })
+        }
+      })
   </script>
 </head>
 
@@ -192,7 +199,7 @@
 
   <!-- PLANETA 1 -->
   <a-entity position="-5 0 0">
-    <a-sphere radius="0.8" color="#8B0000" planeta-vivo></a-sphere>
+    <a-sphere radius="0.8" color="#8B0000" mylink="href:https://pistacho666.github.io/web3/ex5/ex5.html;" planeta-vivo></a-sphere>
   </a-entity>
 
   <!-- PLANETA 2 -->
