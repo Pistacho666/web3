@@ -16,9 +16,9 @@
   <body>
   <a-scene cursor="rayOrigin: mouse">
     <a-assets>
-      <img id="imgSortida" src="assets/entragroc.png" >
+      <img id="imgSortida" src="assets/face.jpg" >
       <img id="imgFantasma" src="assets/fantasma.png" >
-      <img id="imgCasa" src="assets/casamaldita.jpg" >
+      <img id="imgCasa" src="assets/casamaldita.png" >
       <a-asset-item id="dracula" src="assets/dracula/scene.gltf"></a-asset-item>
     </a-assets>
    
@@ -41,10 +41,10 @@
    
      <a-sky src="#imgCasa"></a-sky>
 
-<a-sphere position="5 2 -5" radius="1" src="#imgFantasma"></a-sphere>
+<a-sphere position="-12.5 1.19 -213.9" radius="10" rotation= "2.076 -77.3 -6.949" src="#imgFantasma"></a-sphere>
 
-<a-entity gltf-model="#dracula" position="-447 0 93" scale="0.05 0.05 0.05" rotation="0 99 0"
-          animation="property: position; dur: 10000; from:-447 -10 93; to:0 -10 0; dir: alternate; loop:true">
+<a-entity gltf-model="#dracula" position= "0 -1 -20" scale="0.05 0.05 0.05" rotation="0 99 0"
+          animation="property: position; dur: 10000; from:-447 -10  28; to:0 -10 0; dir: alternate; loop:true">
 </a-entity>
 
       <a-plane position="14 0 -3" src="#imgSortida" rotation="0 -99 0"  transparent="true" mylink="href: https://pranx.com/hacker/typer/;"></a-plane>
