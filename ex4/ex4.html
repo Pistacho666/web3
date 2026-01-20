@@ -7,13 +7,16 @@
   <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
 
   <script>
-    AFRAME.registerComponent("mylink", {
-        init: function() {  
-         this.el.addEventListener("click", (e) => {              
-            window.location = this.data.href;      
-           })
-        }
-      });
+AFRAME.registerComponent("mylink", {
+  schema: {
+    href: { type: 'string' }
+  },
+  init: function () {
+    this.el.addEventListener("click", () => {
+      window.location.href = this.data.href;
+    });
+  }
+});
     /* =========================
        ESTRELLAS FONDO ESPACIAL
     ========================== */
@@ -200,7 +203,13 @@
 
   <!-- PLANETA 1 -->
   <a-entity position="-5 0 0">
-    <a-sphere radius="0.8" color="#8B0000" mylink="href:https://pistacho666.github.io/web3/ex5/ex5.html;"planeta-vivo></a-sphere>
+  <a-sphere
+  radius="0.8"
+  color="#8B0000"
+  mylink="href: https://pistacho666.github.io/web3/ex5/ex5.html"
+  planeta-vivo>
+</a-sphere>
+
   </a-entity>
 
   <!-- PLANETA 2 -->
