@@ -1,5 +1,7 @@
 # web3
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Portafolio web estático con ejemplos y demos 3D implementados con A-Frame y MindAR. El proyecto es 100% HTML y contiene una página principal (index.html) que enlaza con 5 ejercicios interactivos (ex1..ex5) y recursos multimedia en la carpeta `imatges`.
 
 Vista previa
@@ -77,9 +79,13 @@ Vista previa
 
 ## Licencia
 
-No hay licencia en el repositorio actualmente (según el contenido revisado). Si quieres, puedo añadir un `LICENSE` (por ejemplo MIT). Indica qué licencia prefieres y la genero.
+Este proyecto está licenciado bajo la Licencia MIT — consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ## Autor / Créditos
 
-- Autor: Andrés Daniel Torres Pérez
+- Autor (según `index.html`): Andrés Daniel Torres Pérez
 - Contacto GitHub: https://github.com/Pistacho666
+
+## Notas finales
+
+He añadido la sección de licencia y un badge en la cabecera del README. Si quieres que cambie el estilo, idioma, o añada capturas/screenshots, dímelo y lo actualizo.
