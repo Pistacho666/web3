@@ -81,9 +81,5 @@ No hay licencia en el repositorio actualmente (según el contenido revisado). Si
 
 ## Autor / Créditos
 
-- Autor (según `index.html`): Andrés Daniel Torres Pérez
+- Autor: Andrés Daniel Torres Pérez
 - Contacto GitHub: https://github.com/Pistacho666
-
-## Notas finales
-
-He añadido el snippet solicitado al README.md y he subido el archivo al repositorio. Si quieres que haga cambios (traducción, añadir capturas, badges, o crear el archivo LICENSE), dime qué prefieres y lo actualizo.
