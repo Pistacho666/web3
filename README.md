@@ -83,9 +83,5 @@ Este proyecto está licenciado bajo la Licencia MIT — consulta el archivo [LIC
 
 ## Autor / Créditos
 
-- Autor (según `index.html`): Andrés Daniel Torres Pérez
+- Autor: Andrés Daniel Torres Pérez
 - Contacto GitHub: https://github.com/Pistacho666
-
-## Notas finales
-
-He añadido la sección de licencia y un badge en la cabecera del README. Si quieres que cambie el estilo, idioma, o añada capturas/screenshots, dímelo y lo actualizo.
